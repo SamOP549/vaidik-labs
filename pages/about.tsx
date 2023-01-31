@@ -1,8 +1,11 @@
 import React from 'react'
+import Jumbotron from '@/components/Jumbotron'
 
 const About = () => {
   return (
-    <div>About</div>
+    <div>
+      <Jumbotron title="About Us" bg="/Covers/about.jpg" />
+    </div>
   )
 }
 
