@@ -12,7 +12,7 @@ import {
 import { IconBrandTwitter, IconBrandYoutube, IconBrandInstagram } from '@tabler/icons';
 import { ContactIconsList } from './ContactIcons';
 import bg from '../../public/contact-bg.svg'
-import Jumbotron from '@/components/Jumbotron';
+import Hero from '@/components/Hero';
 
 const useStyles = createStyles((theme) => ({
   wrapper: {
@@ -88,7 +88,7 @@ export default function ContactUs() {
 
   return (
     <>
-      <Jumbotron title="Contact Us" bg="/Covers/contact.jpg" />
+      <Hero screen={2} title="Contact Us" bg="/Covers/contact.jpg" />
       <div className={classes.wrapper}>
         <SimpleGrid cols={2} spacing={50} breakpoints={[{ maxWidth: 'sm', cols: 1 }]}>
           <div>

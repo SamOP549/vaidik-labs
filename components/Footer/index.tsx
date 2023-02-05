@@ -1,12 +1,13 @@
 import { createStyles, Text, Container, ActionIcon, Group } from '@mantine/core';
 import { IconBrandTwitter, IconBrandYoutube, IconBrandInstagram } from '@tabler/icons';
+import Image from 'next/image';
 
 const useStyles = createStyles((theme) => ({
     footer: {
         marginTop: 80,
         paddingTop: theme.spacing.xl * 2,
         paddingBottom: theme.spacing.xl * 2,
-        backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.colors.gray[0],
+        backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[6] : "#000",
         borderTop: `1px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[2]
             }`,
     },
@@ -101,49 +102,33 @@ export default function FooterLinks() {
 
     const data = [
         {
-            "title": "About",
+            "title": "Links",
             "links": [
                 {
-                    "label": "Features",
+                    "label": "About",
                     "link": "#"
                 },
                 {
-                    "label": "Pricing",
-                    "link": "#"
-                },
-                {
-                    "label": "Support",
-                    "link": "#"
-                },
-                {
-                    "label": "Forums",
+                    "label": "Services",
                     "link": "#"
                 }
             ]
         },
         {
-            "title": "Project",
+            "title": "Contact",
             "links": [
                 {
-                    "label": "Contribute",
+                    "label": "Number",
                     "link": "#"
                 },
                 {
-                    "label": "Media assets",
-                    "link": "#"
-                },
-                {
-                    "label": "Changelog",
-                    "link": "#"
-                },
-                {
-                    "label": "Releases",
+                    "label": "Email",
                     "link": "#"
                 }
             ]
         },
         {
-            "title": "Community",
+            "title": "Location",
             "links": [
                 {
                     "label": "Join Discord",
@@ -151,14 +136,6 @@ export default function FooterLinks() {
                 },
                 {
                     "label": "Follow on Twitter",
-                    "link": "#"
-                },
-                {
-                    "label": "Email newsletter",
-                    "link": "#"
-                },
-                {
-                    "label": "GitHub discussions",
                     "link": "#"
                 }
             ]
@@ -190,22 +167,7 @@ export default function FooterLinks() {
         <footer className={classes.footer}>
             <Container className={classes.inner}>
                 <div className={classes.logo}>
-                    <svg
-                        className=""
-                        fill="none"
-                        height="36"
-                        viewBox="0 0 32 32"
-                        width="36"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <rect fill="var(--secondary)" height="100%" rx="16" width="100%" />
-                        <path
-                            clipRule="evenodd"
-                            d="M17.6482 10.1305L15.8785 7.02583L7.02979 22.5499H10.5278L17.6482 10.1305ZM19.8798 14.0457L18.11 17.1983L19.394 19.4511H16.8453L15.1056 22.5499H24.7272L19.8798 14.0457Z"
-                            fill="currentColor"
-                            fillRule="evenodd"
-                        />
-                    </svg>
+                    <Image quality="90" loading="lazy" className='cursor-pointer' src='/fulllogo.jpg' width="54" height="54" alt="navbarLogo" />
                     <Text size="xs" color="dimmed" className={classes.description}>
                         Build fully functional accessible web applications faster than ever
                     </Text>

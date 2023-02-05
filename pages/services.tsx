@@ -1,48 +1,48 @@
 import React from 'react'
-import Jumbotron from '@/components/Jumbotron'
+import Hero from '@/components/Hero'
 import Link from 'next/link'
 
 const Services = () => {
   const data = [
     {
       title: "Migration",
-      picture: "",
-      description: "Software migration is the practice of transferring data, accounts, and functionality from one operating environment to another. It could also refer to times when users are migrating the same software from one piece of computer hardware to another, or changing both software and hardware simultaneously."
+      picture: "./Services/l3.jpg",
+      description: "Transferring information, user accounts, and functionalities from one operating environment to another is known as software migration. It might also be used to describe situations in which users are simultaneously updating both software and hardware or migrating the same software from one piece of computer hardware to another."
     },
     {
       title: "Customizations",
-      picture: "",
-      description: "Customised software (also known as bespoke software or tailor-made software) is software that is specially developed for some specific organization or other user."
+      picture: "./Services/l1.jpg",
+      description: "Customized software, commonly referred to as bespoke software or tailor-made software, is software that has been created especially for a particular company or user."
     },
     {
       title: "Software Solution",
-      picture: "",
-      description: "KEYGAP is focused on creating sustainable value growth through innovative solutions and unique partnerships. Our values are at the heart of our business reputation and are essential to our continued success."
+      picture: "./Services/l2.jpg",
+      description: "Vaidik Labs is committed to generating sustainable value creation through original ideas and distinctive alliances. Our company's reputation is built on our ideals, which are crucial to our ongoing success."
     },
     {
-      title: "Optimiazation",
-      picture: "",
-      description: "Performance Optimization of a programs and software is the process modifying a software system to make it work more efficiently and execute more rapidly."
+      title: "Optimization",
+      picture: "./Services/l4.jpg",
+      description: "Performance Pptimization refers to the process of changing a software system so that it operates more quickly and efficiently."
     },
     {
       title: "Fintech Service",
-      picture: "",
-      description: "Fintech refers to the integration of technology into offerings by financial services companies in order to improve their use and delivery to consumers."
+      picture: "./Services/l5.jpg",
+      description: "Fintech is the term for the process through which financial services providers incorporate technology to enhance the usability and delivery of their products to customers."
     },
     {
       title: "Custom Banking Software Service",
-      picture: "",
-      description: "We perform world-class custom software development services for startups, small-to-midsize (SMB), and enterprise-size businesses."
+      picture: "./Services/l6.jpg",
+      description: "For startups, small-to-midsize (SMB), and enterprise-size enterprises, we provide top-notch custom software development services."
     }
   ]
   const heros = data.map((hero, index) => {
-    return (<div key={index} className="container px-4 py-4 mt-10">
+    return (<div key={index} className="container py-4 mt-10 mx-auto">
       <div className={`flex ${index % 2 ? "flex-row-reverse" : "flex-row"} flex-wrap items-center mt-16`}>
         <div className="w-full md:w-5/12 px-4 mr-auto ml-auto mb-10">
-          <h3 className="text-3xl mb-2 font-semibold leading-normal">
+          <h3 className="text-4xl mb-2 font-medium leading-normal">
             {hero.title}
           </h3>
-          <p className="text-lg mt-4 mb-4">
+          <p className="md:text-lg text-md mt-4 mb-4 text-gray-700">
             {hero.description}
           </p>
           <Link href="/contact">
@@ -56,16 +56,16 @@ const Services = () => {
             </button>
           </Link>
         </div>
-        <div className="w-full md:w-4/12 px-4 mr-auto ml-auto">
-          <img className="md:block hidden w-full align-middle rounded  -lg" style={{ transform: `${index % 2 ? "scale(1) perspective(1040px) rotateY(11deg) rotateX(-2deg) rotate(-2deg)" : "scale(1) perspective(1040px) rotateY(-11deg) rotateX(2deg) rotate(2deg)"}` }} alt="..." src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1051&amp;q=80" />
-          <img className="md:hidden block w-full align-middle rounded  -lg" alt="..." src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1051&amp;q=80" />
+        <div className="w-full md:w-5/12 px-4 mr-auto ml-auto">
+          <img className="md:block hidden w-full align-middle rounded  -lg" style={{ transform: `${index % 2 ? "scale(1) perspective(1040px) rotateY(11deg) rotateX(-2deg) rotate(-2deg)" : "scale(1) perspective(1040px) rotateY(-11deg) rotateX(2deg) rotate(2deg)"}` }} alt={hero.title} src={hero.picture} />
+          <img className="md:hidden block w-full align-middle rounded  -lg" alt={hero.title} src={hero.picture} />
         </div>
       </div>
     </div>)
   })
   return (
     <div>
-      <Jumbotron title="Our Services" bg="/Covers/services.jpg" />
+      <Hero screen={2} title="Our Services" bg="/Covers/services.jpg" />
 
       <section className="mt-24">
         {heros}

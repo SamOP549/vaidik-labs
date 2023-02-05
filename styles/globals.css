@@ -89,7 +89,7 @@ body {
   font-weight: bold;
   color: white;
   background-color: #171717;
-  padding: 1em 2em;
+  padding: 0.8em 1.6em;
   border: none;
   border-radius: .6rem;
   position: relative;
@@ -134,4 +134,67 @@ body {
 .get_in_touch_btn:hover span:not(:nth-child(6)) {
   transform: translate(-50%, -50%) scale(4);
   transition: 1.5s ease;
+}
+
+[type='button'] {
+  background-color: #fff;
+}
+
+/* Get Started Button */
+
+.get_started_btn {
+  --color: #ffffff;
+  --color2: rgb(10, 25, 30);
+  padding: 0.8em 1.75em;
+  background-color: transparent;
+  border-radius: 6px;
+  border: .3px solid var(--color);
+  transition: .5s;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 1;
+  font-weight: 300;
+  font-size: 17px;
+  font-family: 'Roboto', 'Segoe UI', sans-serif;
+  text-transform: uppercase;
+  color: var(--color);
+}
+
+.get_started_btn::after,
+.get_started_btn::before {
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  transform: skew(90deg) translate(-50%, -50%);
+  position: absolute;
+  inset: 50%;
+  left: 25%;
+  z-index: -1;
+  transition: .5s ease-out;
+  background-color: var(--color);
+}
+
+.get_started_btn::before {
+  top: -50%;
+  left: -25%;
+  transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.get_started_btn:hover::before {
+  transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.get_started_btn:hover::after {
+  transform: skew(45deg) translate(-50%, -50%);
+}
+
+.get_started_btn:hover {
+  color: var(--color2);
+}
+
+.get_started_btn:active {
+  filter: brightness(.7);
+  transform: scale(.98);
 }

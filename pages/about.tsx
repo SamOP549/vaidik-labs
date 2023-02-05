@@ -1,10 +1,10 @@
 import React from 'react'
-import Jumbotron from '@/components/Jumbotron'
+import Hero from '@/components/Hero'
 
 const About = () => {
   return (
     <div>
-      <Jumbotron title="About Us" bg="/Covers/about.jpg" />
+      <Hero screen={2} title="About Us" bg="/Covers/about.jpg" />
     </div>
   )
 }
