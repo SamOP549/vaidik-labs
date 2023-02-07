@@ -16,9 +16,9 @@ export default function Home() {
                         <h1 className="text-2xl font-semibold text-gray-800 capitalize md:text-3xl lg:text-4xl">Why<br /> Choose Us?</h1>
 
                         <div className="mt-2">
-                            <span className="inline-block w-40 h-1 bg-blue-500 rounded-full"></span>
-                            <span className="inline-block w-3 h-1 ml-1 bg-blue-500 rounded-full"></span>
-                            <span className="inline-block w-1 h-1 ml-1 bg-blue-500 rounded-full"></span>
+                            <span className="inline-block w-40 h-1 bg-[#FF7000] rounded-full"></span>
+                            <span className="inline-block w-3 h-1 ml-1 bg-[#FF7000] rounded-full"></span>
+                            <span className="inline-block w-1 h-1 ml-1 bg-[#FF7000] rounded-full"></span>
                         </div>
 
                         <div className="mt-8 xl:mt-12 lg:flex lg:items-center">
