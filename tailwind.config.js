@@ -10,7 +10,7 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [require("daisyui")],
+  plugins: [],
   presets: [
     require('tailwindcss/defaultConfig'), require('xtendui/tailwind.preset'),
   ]
