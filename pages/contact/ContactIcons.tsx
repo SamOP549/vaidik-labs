@@ -18,9 +18,8 @@ const useStyles = createStyles((theme, { variant }: ContactIconStyles) => ({
     marginRight: theme.spacing.md,
     backgroundImage:
       variant === 'gradient'
-        ? `linear-gradient(135deg, ${theme.colors[theme.primaryColor][4]} 0%, ${
-            theme.colors[theme.primaryColor][6]
-          } 100%)`
+        ? `linear-gradient(135deg, ${theme.colors[theme.primaryColor][4]} 0%, ${theme.colors[theme.primaryColor][6]
+        } 100%)`
         : 'none',
     backgroundColor: 'transparent',
   },
@@ -89,11 +88,11 @@ export function ContactIconsList({ data = MOCKDATA, variant }: ContactIconsListP
   return <Stack>{items}</Stack>;
 }
 
-export function ContactIcons() {
+export default function ContactIcons() {
   return (
     <SimpleGrid cols={2} breakpoints={[{ maxWidth: 755, cols: 1 }]}>
       <Box
-        sx={(theme) => ({
+        sx={(theme: any) => ({
           padding: theme.spacing.xl,
           borderRadius: theme.radius.md,
           backgroundColor: theme.white,
@@ -103,12 +102,11 @@ export function ContactIcons() {
       </Box>
 
       <Box
-        sx={(theme) => ({
+        sx={(theme: any) => ({
           padding: theme.spacing.xl,
           borderRadius: theme.radius.md,
-          backgroundImage: `linear-gradient(135deg, ${theme.colors[theme.primaryColor][6]} 0%, ${
-            theme.colors[theme.primaryColor][4]
-          } 100%)`,
+          backgroundImage: `linear-gradient(135deg, ${theme.colors[theme.primaryColor][6]} 0%, ${theme.colors[theme.primaryColor][4]
+            } 100%)`,
         })}
       >
         <ContactIconsList variant="white" />
