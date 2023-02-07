@@ -22,7 +22,6 @@ const useStyles = createStyles((theme, _params, getRef) => ({
         '&:hover': {
             boxShadow: "0 4px 18px 0 rgba(0, 0, 0, 0.25)",
             borderColor: "#008bf8",
-            borderRadius: "1rem"
         },
         [`&:hover .${getRef('button')}`]: {
             transform: "translate(-50%, -20%)",
@@ -131,7 +130,7 @@ export function CardsCarousel() {
 
     return (
         <div className="h-[100vh]" >
-            <h1 className='text-center mt-10 font-semibold text-4xl overflow-visible'>Services We Offer</h1>
+            <h1 className='text-center mt-10 font-semibold lg:text-4xl md:text-3xl text-2xl overflow-visible'>Services We Offer</h1>
             <Carousel
                 slideSize="33%"
                 breakpoints={[{ maxWidth: 'sm', slideSize: '100%', slideGap: 2 }]}

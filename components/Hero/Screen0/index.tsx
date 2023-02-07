@@ -1,7 +1,7 @@
 import { Carousel } from '@mantine/carousel';
 import { useRef } from 'react';
 import Autoplay from 'embla-carousel-autoplay';
-import Image from 'next/image';
+import Image from 'next/legacy/image';
 import { createStyles } from '@mantine/core';
 import { IconArrowRight, IconArrowLeft } from '@tabler/icons';
 import core from '../../../public/CarouselCovers/core.jpg';
@@ -64,6 +64,7 @@ function Demo() {
 
                     '&[data-active]': {
                         width: 40,
+                        backgroundColor: "#FF7000",
                     },
                 },
             }}

@@ -18,12 +18,11 @@ const useStyles = createStyles((theme) => ({
   wrapper: {
     minHeight: 400,
     boxSizing: 'border-box',
-    backgroundImage: `url(${bg.src})`,
-    padding: theme.spacing.xl * 2.5,
-
-    [`@media (max-width: ${theme.breakpoints.sm}px)`]: {
-      padding: theme.spacing.xl * 1.5,
-    },
+    backgroundColor: theme.white,
+    boxShadow: theme.shadows.lg,
+    position: 'relative',
+    zIndex: 1,
+    border: `50px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.colors.gray[2]}`,
   },
 
   title: {
@@ -41,11 +40,28 @@ const useStyles = createStyles((theme) => ({
     },
   },
 
-  form: {
-    backgroundColor: theme.white,
-    padding: theme.spacing.xl,
+  leftpane: {
+    backgroundImage: `url(${bg.src})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+    padding: theme.spacing.xl * 2,
     borderRadius: theme.radius.md,
-    boxShadow: theme.shadows.lg,
+    position: 'relative',
+    zIndex: 1,
+
+
+    [`@media (max-width: ${theme.breakpoints.sm}px)`]: {
+      padding: theme.spacing.xl * 1.5,
+    },
+  },
+
+  form: {
+    padding: theme.spacing.xl * 2,
+    borderRadius: theme.radius.md,
+    [`@media (max-width: ${theme.breakpoints.sm}px)`]: {
+      padding: theme.spacing.xl,
+    },
   },
 
   social: {
@@ -91,7 +107,7 @@ export default function ContactUs() {
       <Hero screen={2} title="Contact Us" bg="/Covers/contact.jpg" />
       <div className={classes.wrapper}>
         <SimpleGrid cols={2} spacing={50} breakpoints={[{ maxWidth: 'sm', cols: 1 }]}>
-          <div>
+          <div className={classes.leftpane}>
             <Title className={classes.title}>Contact us</Title>
             <Text className={classes.description} mt="sm" mb={30}>
               Leave your email and we will get back to you within 24 hours
@@ -100,8 +116,8 @@ export default function ContactUs() {
             <ContactIconsList variant="white" />
 
             <Group mt="xl">{icons}</Group>
-
           </div>
+
           <div className={classes.form}>
             <TextInput
               label="Email"
