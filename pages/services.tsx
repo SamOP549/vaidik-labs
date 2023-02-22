@@ -37,9 +37,9 @@ const Services = () => {
   ]
   const heros = data.map((hero, index) => {
     return (
-      <div key={index} className="container py-4 mt-10 mx-auto">
+      <div key={index} className="container py-4 mt-10 mx-auto overflow-hidden">
         <div className={`flex ${index % 2 ? "flex-row-reverse" : "flex-row"} flex-wrap items-center mt-16`}>
-          <div className="w-full md:w-5/12 px-4 mr-auto ml-auto mb-10">
+          <div data-aos={`${index % 2 ? "fade-left" : "fade-right"}`} className="w-full md:w-5/12 px-4 mr-auto ml-auto mb-10">
             <h3 className="text-4xl mb-2 font-medium leading-normal">
               {hero.title}
             </h3>
@@ -57,7 +57,7 @@ const Services = () => {
               </button>
             </Link>
           </div>
-          <div className="w-full md:w-5/12 px-4 mr-auto ml-auto">
+          <div data-aos="fade-up" data-aos-delay="300" className="w-full md:w-5/12 px-4 mr-auto ml-auto">
             <img className="md:block hidden w-full align-middle rounded  -lg" style={{ transform: `${index % 2 ? "scale(1) perspective(1040px) rotateY(11deg) rotateX(-2deg) rotate(-2deg)" : "scale(1) perspective(1040px) rotateY(-11deg) rotateX(2deg) rotate(2deg)"}` }} alt={hero.title} src={hero.picture} />
             <img className="md:hidden block w-full align-middle rounded  -lg" alt={hero.title} src={hero.picture} />
           </div>
@@ -69,7 +69,7 @@ const Services = () => {
     <div>
       <Hero screen={2} title="Our Services" bg="/Covers/services.jpg" />
 
-      <section className="my-16">
+      <section className="my-16 overflow-x-hidden">
       <h1 className='text-center font-semibold lg:text-4xl md:text-3xl text-2xl overflow-visible'>Our Offerings</h1>
         {heros}
       </section>

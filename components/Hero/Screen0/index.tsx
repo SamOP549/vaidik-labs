@@ -7,6 +7,7 @@ import { IconArrowRight, IconArrowLeft } from '@tabler/icons';
 import core from '../../../public/CarouselCovers/core.jpg';
 import software from '../../../public/CarouselCovers/software.jpg';
 import team from '../../../public/CarouselCovers/team.jpg';
+import Link from 'next/link';
 
 const useStyles = createStyles((_theme, _params, getRef) => ({
     controls: {
@@ -84,7 +85,9 @@ function Demo() {
                                 <div className="text-white md:px-36 px-12">
                                     <h2 className="font-semibold md:text-5xl text-4xl mb-4">{slide.title}</h2>
                                     <h4 className="font-semibold md:text-xl text-lg mb-6">{slide.desc}</h4>
-                                    <button className="get_started_btn"> Get Started</button>
+                                    <Link href="/contact">
+                                        <button className="get_started_btn"> Get Started</button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

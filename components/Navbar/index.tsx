@@ -82,9 +82,23 @@ const Navbar = () => {
             </Link>
           </li>
           <li className='p-4 text-lg'>
+            <Link rel="preload" href='/media'>
+              <button className="cta">
+                <span className="hover-underline-animation">Media</span>
+              </button>
+            </Link>
+          </li>
+          <li className='p-4 text-lg'>
             <Link rel="preload" href='/contact'>
               <button className="cta">
                 <span className="hover-underline-animation">Contact</span>
+              </button>
+            </Link>
+          </li>
+          <li className='p-4 text-lg'>
+            <Link rel="preload" href='/careers'>
+              <button className="cta">
+                <span className="hover-underline-animation">Careers</span>
               </button>
             </Link>
           </li>
@@ -111,13 +125,19 @@ const Navbar = () => {
               <Link rel="preload" href='/'><h6 className='cursor-pointer text-white'>Home</h6></Link>
             </li>
             <li onClick={handleNav} className='p-4 text-2xl'>
-              <Link rel="preload" href='/services'><h6 className='cursor-pointer text-white'>Services</h6></Link>
-            </li>
-            <li onClick={handleNav} className='p-4 text-2xl'>
               <Link rel="preload" href='/about'><h6 className='cursor-pointer text-white'>About</h6></Link>
             </li>
             <li onClick={handleNav} className='p-4 text-2xl'>
+              <Link rel="preload" href='/services'><h6 className='cursor-pointer text-white'>Services</h6></Link>
+            </li>
+            <li onClick={handleNav} className='p-4 text-2xl'>
+              <Link rel="preload" href='/media'><h6 className='cursor-pointer text-white'>Media</h6></Link>
+            </li>
+            <li onClick={handleNav} className='p-4 text-2xl'>
               <Link rel="preload" href='/contact'><h6 className='cursor-pointer text-white'>Contact</h6></Link>
+            </li>
+            <li onClick={handleNav} className='p-4 text-2xl'>
+              <Link rel="preload" href='/careers'><h6 className='cursor-pointer text-white'>Careers</h6></Link>
             </li>
           </ul>
         </div>

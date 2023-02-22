@@ -9,10 +9,11 @@ import {
   Group,
   ActionIcon,
 } from '@mantine/core';
-import { IconBrandTwitter, IconBrandYoutube, IconBrandInstagram } from '@tabler/icons';
+import { IconBrandTwitter, IconBrandYoutube, IconBrandInstagram, IconBrandLinkedin } from '@tabler/icons';
 import { ContactIconsList } from './ContactIcons';
 import bg from '../../public/contact-bg.svg'
 import Hero from '@/components/Hero';
+import Link from 'next/link';
 
 const useStyles = createStyles((theme) => ({
   wrapper: {
@@ -91,22 +92,24 @@ const useStyles = createStyles((theme) => ({
   },
 }));
 
-const social = [IconBrandTwitter, IconBrandYoutube, IconBrandInstagram];
+const social = [{ name: IconBrandTwitter, href: "" }, { name: IconBrandYoutube, href: "" }, { name: IconBrandInstagram, href: "" }, { name: IconBrandLinkedin, href: "https://www.linkedin.com/company/vinnovationlabs/" }];
 
 export default function ContactUs() {
   const { classes } = useStyles();
 
   const icons = social.map((Icon, index) => (
-    <ActionIcon key={index} size={28} className={classes.social} variant="transparent">
-      <Icon size={22} stroke={1.5} />
-    </ActionIcon>
+    <Link href={Icon.href} target="_blank" rel="referrer no-referrer" key={index}>
+      <ActionIcon size={28} className={classes.social} variant="transparent">
+        <Icon.name size={22} stroke={1.5} />
+      </ActionIcon>
+    </Link>
   ));
 
   return (
     <>
       <Hero screen={2} title="Contact Us" bg="/Covers/contact.jpg" />
       <div className={classes.wrapper}>
-        <SimpleGrid cols={2} spacing={50} breakpoints={[{ maxWidth: 'sm', cols: 1 }]}>
+        <SimpleGrid data-aos="fade-up" cols={2} spacing={50} breakpoints={[{ maxWidth: 'sm', cols: 1 }]}>
           <div className={classes.leftpane}>
             <Title className={classes.title}>Contact us</Title>
             <Text className={classes.description} mt="sm" mb={30}>

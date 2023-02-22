@@ -133,11 +133,11 @@ export function CardsCarousel() {
             <h1 className='text-center mt-10 font-semibold lg:text-4xl md:text-3xl text-2xl overflow-visible'>Services We Offer</h1>
             <Carousel
                 slideSize="33%"
-                breakpoints={[{ maxWidth: 'sm', slideSize: '100%', slideGap: 2 }]}
+                breakpoints={[{ maxWidth: 'sm', slideSize: '100%', slideGap: 1 }]}
                 slideGap="xl"
                 align="start"
                 slidesToScroll={1}
-                className="my-10 md:px-5 px-10 overflow-visible"
+                className="my-10 md:px-5 px-2 overflow-visible"
                 loop
                 plugins={[autoplay.current]}
                 withControls={false}
