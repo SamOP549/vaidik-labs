@@ -33,7 +33,7 @@ export default function Home() {
                                     <h1 className="text-xl font-semibold text-gray-700 capitalize">Core Banking Solutions</h1>
 
                                     <p className="text-gray-500">
-                                        Our products work seamlessly with the renowned CBS Finacle platform.
+                                        Our products work seamlessly with the renowned CBS platform.
                                     </p>
                                 </div>
 
@@ -44,10 +44,10 @@ export default function Home() {
                                         </svg>
                                     </span>
 
-                                    <h1 className="text-xl font-semibold text-gray-700 capitalize">Document Management Soluions</h1>
+                                    <h1 className="text-xl font-semibold text-gray-700 capitalize">IT Support and Consultancy</h1>
 
                                     <p className="text-gray-500">
-                                        With the help of the best in the business, we develop excellent document management products.
+                                        We  offer a range of consulting services, business process engineering, software product development to meet your dynamic IT requirement.
                                     </p>
                                 </div>
 
@@ -86,6 +86,30 @@ export default function Home() {
                         </div>
                     </div>
                 </section>
+                <h1 className="xl:text-5xl md:text-4xl text-2xl font-semibold leading-tight text-center text-gray-800 sm:mb-0 mb-12">
+                    More Than 3 Years of Experience <br className="md:block hidden" />
+                </h1>
+                <div className="md:mt-14 mt-4 relative sm:flex items-center justify-center md:px-10 px-6">
+                    <img src="https://i.ibb.co/KjrPCyW/map.png" alt="world map image" className="w-full xl:h-full h-96 object-cover object-fill sm:block hidden sm:pr-0 pr-10" />
+                    <img src="https://i.ibb.co/SXKj9Mf/map-bg.png" alt="mobile-image" className="sm:hidden -mt-10 block w-full h-96 object-cover object-fill absolute z-0 sm:pr-0 pr-10" />
+
+                    <div className="shadow-lg xl:p-6 p-4 sm:w-auto w-2/5 bg-white sm:absolute relative z-5 mt-4 left-0 xl:ml-56 sm:ml-12 xl:-mt-40 sm:-mt-12">
+                        <p className="text-3xl font-semibold text-gray-800">500</p>
+                        <p className="text-base leading-4 xl:mt-4 mt-2 text-gray-600">Software Solutions</p>
+                    </div>
+                    <div className="shadow-lg xl:p-6 p-4 sm:w-auto w-2/5 bg-white sm:absolute relative z-5 mt-4 ml-auto xl:-mt-80 sm:-mt-56 xl:-ml-0 sm:-ml-12">
+                        <p className="text-3xl font-semibold text-gray-800">10</p>
+                        <p className="text-base leading-4 xl:mt-4 mt-2 text-gray-600">Consultants</p>
+                    </div>
+                    <div className="shadow-lg xl:p-6 p-4 sm:w-auto w-2/5 bg-white sm:absolute relative z-5 mt-4 xl:mt-80 sm:mt-56 xl:-ml-0 sm:-ml-12">
+                        <p className="text-3xl font-semibold text-gray-800">10</p>
+                        <p className="text-base leading-4 xl:mt-4 mt-2 text-gray-600">Consultants</p>
+                    </div>
+                    <div className="shadow-lg xl:p-6 p-4 sm:w-auto w-2/5 bg-white sm:absolute relative z-5 md:mt-0 sm:-mt-5 mt-4 ml-auto right-0 xl:mr-56 sm:mr-24">
+                        <p className="text-3xl font-semibold text-gray-800">10</p>
+                        <p className="text-base leading-4 xl:mt-4 mt-2 text-gray-600">Countries</p>
+                    </div>
+                </div>
                 <Hero screen={1} />
             </main>
         </>

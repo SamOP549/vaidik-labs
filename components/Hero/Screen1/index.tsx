@@ -116,10 +116,30 @@ const data = [
             "./Services/p6.jpg",
         title: 'Custom Banking Software Service',
     },
+    {
+        image:
+            "./Services/p7.jpg",
+        title: 'CBS Upgrade ',
+    },
+    {
+        image:
+            "./Services/p8.jpg",
+        title: 'Merger & Aquisition',
+    },
+    {
+        image:
+            "./Services/p9.jpg",
+        title: 'BAAS/SAAS/CLOUD',
+    },
+    {
+        image:
+            "./Services/p10.jpg",
+        title: 'Implementation and Support',
+    }
 ];
 
 export function CardsCarousel() {
-    const autoplay = useRef(Autoplay({ delay: 3000 }));
+    const autoplay = useRef(Autoplay({ delay: 4000 }));
     const theme = useMantineTheme();
     const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm}px)`);
     const slides = data.map((item) => (

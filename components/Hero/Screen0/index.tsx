@@ -28,13 +28,13 @@ const useStyles = createStyles((_theme, _params, getRef) => ({
 
 
 function Demo() {
-    const autoplay = useRef(Autoplay({ delay: 4000 }));
+    const autoplay = useRef(Autoplay({ delay: 6000 }));
     const { classes } = useStyles();
     const slides = [
         {
             image: core,
             title: "Core Banking Solutions",
-            desc: "We have been providing Finacle Implementation, Customization, Integration with Third Party apps, Report creation, Migration and Support for financial institutions all around the world.",
+            desc: "We have been providing Software Implementation, Customization, Integration with Third Party apps, Report creation, Migration and Support for financial institutions all around the world.",
         },
         {
             image: team,

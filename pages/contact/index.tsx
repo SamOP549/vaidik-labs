@@ -1,153 +1,33 @@
-import {
-  createStyles,
-  Text,
-  Title,
-  SimpleGrid,
-  TextInput,
-  Textarea,
-  Button,
-  Group,
-  ActionIcon,
-} from '@mantine/core';
-import { IconBrandTwitter, IconBrandYoutube, IconBrandInstagram, IconBrandLinkedin } from '@tabler/icons';
-import { ContactIconsList } from './ContactIcons';
-import bg from '../../public/contact-bg.svg'
-import Hero from '@/components/Hero';
-import Link from 'next/link';
-
-const useStyles = createStyles((theme) => ({
-  wrapper: {
-    minHeight: 400,
-    boxSizing: 'border-box',
-    backgroundColor: theme.white,
-    boxShadow: theme.shadows.lg,
-    position: 'relative',
-    zIndex: 1,
-    border: `50px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.colors.gray[2]}`,
-  },
-
-  title: {
-    fontFamily: `Greycliff CF, ${theme.fontFamily}`,
-    color: theme.white,
-    lineHeight: 1,
-  },
-
-  description: {
-    color: theme.colors[theme.primaryColor][0],
-    maxWidth: 300,
-
-    [`@media (max-width: ${theme.breakpoints.sm}px)`]: {
-      maxWidth: '100%',
-    },
-  },
-
-  leftpane: {
-    backgroundImage: `url(${bg.src})`,
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    backgroundRepeat: 'no-repeat',
-    padding: theme.spacing.xl * 2,
-    borderRadius: theme.radius.md,
-    position: 'relative',
-    zIndex: 1,
-
-
-    [`@media (max-width: ${theme.breakpoints.sm}px)`]: {
-      padding: theme.spacing.xl * 1.5,
-    },
-  },
-
-  form: {
-    padding: theme.spacing.xl * 2,
-    borderRadius: theme.radius.md,
-    [`@media (max-width: ${theme.breakpoints.sm}px)`]: {
-      padding: theme.spacing.xl,
-    },
-  },
-
-  social: {
-    color: theme.white,
-
-    '&:hover': {
-      color: theme.colors[theme.primaryColor][1],
-    },
-  },
-
-  input: {
-    backgroundColor: theme.white,
-    borderColor: theme.colors.gray[4],
-    color: theme.black,
-
-    '&::placeholder': {
-      color: theme.colors.gray[5],
-    },
-  },
-
-  inputLabel: {
-    color: theme.black,
-  },
-
-  control: {
-    backgroundColor: theme.colors[theme.primaryColor][6],
-  },
-}));
-
-const social = [{ name: IconBrandTwitter, href: "" }, { name: IconBrandYoutube, href: "" }, { name: IconBrandInstagram, href: "" }, { name: IconBrandLinkedin, href: "https://www.linkedin.com/company/vinnovationlabs/" }];
+import Hero from '../../components/Hero';
 
 export default function ContactUs() {
-  const { classes } = useStyles();
-
-  const icons = social.map((Icon, index) => (
-    <Link href={Icon.href} target="_blank" rel="referrer no-referrer" key={index}>
-      <ActionIcon size={28} className={classes.social} variant="transparent">
-        <Icon.name size={22} stroke={1.5} />
-      </ActionIcon>
-    </Link>
-  ));
 
   return (
     <>
       <Hero screen={2} title="Contact Us" bg="/Covers/contact.jpg" />
-      <div className={classes.wrapper}>
-        <SimpleGrid data-aos="fade-up" cols={2} spacing={50} breakpoints={[{ maxWidth: 'sm', cols: 1 }]}>
-          <div className={classes.leftpane}>
-            <Title className={classes.title}>Contact us</Title>
-            <Text className={classes.description} mt="sm" mb={30}>
-              Leave your email and we will get back to you within 24 hours
-            </Text>
-
-            <ContactIconsList variant="white" />
-
-            <Group mt="xl">{icons}</Group>
+      <div className="grid max-w-screen-xl grid-cols-1 gap-8 px-8 py-16 mx-auto rounded-lg md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 bg-gray-100 text-gray-800">
+        <div className="flex flex-col justify-between">
+          <div className="space-y-2">
+            <h2 className="text-4xl font-bold leading-tight lg:text-5xl">Let&apos;s talk!</h2>
+            <div className="text-gray-600">Leave a message and we&apos;ll get back to you.</div>
           </div>
-
-          <div className={classes.form}>
-            <TextInput
-              label="Email"
-              placeholder="your@email.com"
-              required
-              classNames={{ input: classes.input, label: classes.inputLabel }}
-            />
-            <TextInput
-              label="Name"
-              placeholder="John Doe"
-              mt="md"
-              classNames={{ input: classes.input, label: classes.inputLabel }}
-            />
-            <Textarea
-              required
-              label="Your message"
-              placeholder="I want to order your goods"
-              minRows={4}
-              mt="md"
-              classNames={{ input: classes.input, label: classes.inputLabel }}
-            />
-
-            <Group position="right" mt="md">
-              <Button className={`${classes.control} bg-blue-500`}>Send message</Button>
-            </Group>
+          <img src="/doodle.svg" alt="" className="p-6 h-52 md:h-64" />
+        </div>
+        <form className="space-y-6 ng-untouched ng-pristine ng-valid">
+          <div>
+            <label htmlFor="name" className="text-sm">Full name</label>
+            <input id="name" type="text" placeholder="Name" className="w-full p-3 rounded bg-gray-100 border border-black" />
           </div>
-        </SimpleGrid>
+          <div>
+            <label htmlFor="email" className="text-sm">Email</label>
+            <input id="email" type="email" placeholder='E-mail' className="w-full p-3 rounded bg-gray-100 border border-black" />
+          </div>
+          <div>
+            <label htmlFor="message" className="text-sm">Message</label>
+            <textarea id="message" placeholder='Message' rows={3} className="w-full p-3 rounded bg-gray-100 border border-black"></textarea>
+          </div>
+          <button type="submit" className="w-full p-3 text-sm font-bold tracking-wide uppercase rounded bg-[#FF7000] text-gray-50">Send Message</button>
+        </form>
       </div>
     </>
   );

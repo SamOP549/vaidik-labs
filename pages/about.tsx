@@ -11,10 +11,10 @@ const About = () => {
           <img src="./about-cover.jpg" className="w-full shadow-lg rounded-lg mb-6" alt="About Cover" />
 
           <p>
-            Vaidik Innovation Labs Pvt. Ltd. (VIL) is formed by Industry experts with goal to offer CBS (Finacle) services with perfection. We thrive to serve the industry with our unique model of expertise deliberation. We target to serve Banking Industry at the fullest.
+            Vaidik Innovation Labs Pvt. Ltd. (VIL) is formed by Industry experts with goal to offer CBS services with perfection. We thrive to serve the industry with our unique model of expertise deliberation. We target to serve Banking Industry at the fullest.
             <br />
             <br />
-            VIL has strong credentials in the area of core banking implementation, especially Finacle. VIL&apos;s Leadership come with a blend of Finacle Technical and Subject Matter Experts who have executed projects of high complexity.
+            VIL has strong credentials in the area of core banking implementation. VIL&apos;s Leadership come with a blend of Technical and Subject Matter Experts who have executed projects of high complexity.
           </p>
         </section>
       </div>

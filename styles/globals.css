@@ -50,24 +50,8 @@ span {
   margin: 1em;
 }
 
-.to-red:hover {
-  background: #E5393F;
-}
-
-.to-twitter:hover {
-  background: #1DA1F3;
-}
-
-.to-facebook:hover {
-  background: #3B5998;
-}
-
 .to-linkedin:hover {
   background: #0077B5;
-}
-
-.to-reddit:hover {
-  background: #FF4500;
 }
 
 @keyframes circle-anim {

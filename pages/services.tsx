@@ -33,6 +33,26 @@ const Services = () => {
       title: "Custom Banking Software Service",
       picture: "./Services/l6.jpg",
       description: "For startups, small-to-midsize (SMB), and enterprise-size enterprises, we provide top-notch custom software development services."
+    },
+    {
+      title: "CBS Upgrade",
+      picture: "./Services/l7.jpg",
+      description: "Core banking solution upgrade refers to the process of updating or replacing a financial institution's existing core banking software with a newer version or a different system. This involves migrating all customer data, accounts, transactions, and other essential information from the old system to the new one, while ensuring minimum disruption to the bank's operations."
+    },
+    {
+      title: "Merger & Acquisition",
+      picture: "./Services/l8.jpg",
+      description: "Mergers and acquisitions (M&A) in banking IT solutions refer to the consolidation of two or more companies to form a larger entity or the acquisition of one company by another. In the banking industry, this type of M&A activity often involves companies that provide IT solutions to financial institutions."
+    },
+    {
+      title: "BAAS/SAAS/CLOUD",
+      picture: "./Services/l9.jpg",
+      description: "Vaidik Labs is a provider of all cloud-based banking software solutions. We offer a wide range of cloud-based banking software solutions that are designed to meet the needs of financial institutions of all sizes."
+    },
+    {
+      title: "Implementation and Support",
+      picture: "./Services/l10.jpg",
+      description: "Implementation refers to the process of installing and configuring software or systems to meet the specific needs of a banking organization. Support, on the other hand, involves providing assistance and maintenance services to ensure the smooth running of the implemented solutions."
     }
   ]
   const heros = data.map((hero, index) => {
@@ -70,7 +90,7 @@ const Services = () => {
       <Hero screen={2} title="Our Services" bg="/Covers/services.jpg" />
 
       <section className="my-16 overflow-x-hidden">
-      <h1 className='text-center font-semibold lg:text-4xl md:text-3xl text-2xl overflow-visible'>Our Offerings</h1>
+        <h1 className='text-center font-semibold lg:text-4xl md:text-3xl text-2xl overflow-visible'>Our Offerings</h1>
         {heros}
       </section>
     </div>
