@@ -102,8 +102,8 @@ export default function Home() {
                         <p className="text-base leading-4 xl:mt-4 mt-2 text-gray-600">Consultants</p>
                     </div>
                     <div className="shadow-lg xl:p-6 p-4 sm:w-auto w-2/5 bg-white sm:absolute relative z-5 mt-4 xl:mt-80 sm:mt-56 xl:-ml-0 sm:-ml-12">
-                        <p className="text-3xl font-semibold text-gray-800">10</p>
-                        <p className="text-base leading-4 xl:mt-4 mt-2 text-gray-600">Consultants</p>
+                        <p className="text-3xl font-semibold text-gray-800">10+</p>
+                        <p className="text-base leading-4 xl:mt-4 mt-2 text-gray-600">Clients</p>
                     </div>
                     <div className="shadow-lg xl:p-6 p-4 sm:w-auto w-2/5 bg-white sm:absolute relative z-5 md:mt-0 sm:-mt-5 mt-4 ml-auto right-0 xl:mr-56 sm:mr-24">
                         <p className="text-3xl font-semibold text-gray-800">10</p>
