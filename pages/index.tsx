@@ -86,10 +86,10 @@ export default function Home() {
                         </div>
                     </div>
                 </section>
-                <h1 className="xl:text-5xl md:text-4xl text-2xl font-semibold leading-tight text-center text-gray-800 sm:mb-0 mb-12">
+                <h3 className="xl:text-5xl md:text-4xl text-2xl font-semibold leading-tight text-center text-gray-800 sm:mb-0 mb-12">
                     More Than 3 Years of Experience <br className="md:block hidden" />
-                </h1>
-                <div className="md:mt-14 mt-4 relative sm:flex items-center justify-center md:px-10 px-6">
+                </h3>
+                <div className="md:mt-14 mt-4 relative sm:flex items-center justify-center md:px-10">
                     <img src="https://i.ibb.co/KjrPCyW/map.png" alt="world map image" className="w-full xl:h-full h-96 object-cover object-fill sm:block hidden sm:pr-0 pr-10" />
                     <img src="https://i.ibb.co/SXKj9Mf/map-bg.png" alt="mobile-image" className="sm:hidden -mt-10 block w-full h-96 object-cover object-fill absolute z-0 sm:pr-0 pr-10" />
 

@@ -149,7 +149,7 @@ export function CardsCarousel() {
     ));
 
     return (
-        <div className="h-[100vh]" >
+        <div>
             <h1 className='text-center mt-10 font-semibold lg:text-4xl md:text-3xl text-2xl overflow-visible'>Services We Offer</h1>
             <Carousel
                 slideSize="33%"

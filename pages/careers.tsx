@@ -6,7 +6,7 @@ const Careers = () => {
   const data = [
     {
       title: "Finacle E-Banking Application Support",
-      picture: "./Services/l3.jpg",
+      picture: "./Careers/1.png",
       location: "Kenya or nearby countries (On-site, minimum 2 years to be spent at onsite)",
       skillset: [
         "Knowledge of latest version FEBA",
@@ -21,7 +21,7 @@ const Careers = () => {
     },
     {
       title: "Finacle CRM",
-      picture: "./Services/l1.jpg",
+      picture: "./Careers/2.webp",
       location: "PAN India",
       skillset: [
         "Knowledge of latest version CRM",
@@ -36,7 +36,7 @@ const Careers = () => {
     },
     {
       title: "Finacle Core Customization",
-      picture: "./Services/l2.jpg",
+      picture: "./Careers/3.jpg",
       location: "PAN India & Africa",
       skillset: [
         "Finacle 10x & 11x Knowledge",
@@ -55,7 +55,7 @@ const Careers = () => {
     },
     {
       title: "Finacle Treasury",
-      picture: "./Services/l4.jpg",
+      picture: "./Careers/4.png",
       location: "PAN India & Africa",
       skillset: [
         "Finacle 10x & 11x Knowledge",
