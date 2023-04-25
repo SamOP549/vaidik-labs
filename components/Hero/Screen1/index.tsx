@@ -3,6 +3,7 @@ import { useMediaQuery } from '@mantine/hooks';
 import { createStyles, Paper, Text, Title, Button, useMantineTheme } from '@mantine/core';
 import Autoplay from 'embla-carousel-autoplay';
 import { useRef } from 'react';
+import { IconArrowRight, IconArrowLeft } from '@tabler/icons';
 import Link from 'next/link';
 
 const useStyles = createStyles((theme, _params, getRef) => ({
@@ -156,11 +157,14 @@ export function CardsCarousel() {
                 breakpoints={[{ maxWidth: 'sm', slideSize: '100%', slideGap: 1 }]}
                 slideGap="xl"
                 align="start"
+                controlsOffset="xs"
+                nextControlIcon={<IconArrowRight size={28} />}
+                previousControlIcon={<IconArrowLeft size={28} />}
                 slidesToScroll={1}
                 className="my-10 md:px-5 px-2 overflow-visible"
                 loop
                 plugins={[autoplay.current]}
-                withControls={false}
+                withControls={true}
             >
                 {slides}
             </Carousel>

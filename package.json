@@ -22,6 +22,7 @@
     "@next/font": "13.1.4",
     "@nextui-org/react": "^1.0.0-beta.12",
     "@tabler/icons": "^1.119.0",
+    "@tabler/icons-react": "^2.16.0",
     "@tiptap/extension-link": "^2.0.0-beta.209",
     "@tiptap/react": "^2.0.0-beta.209",
     "@tiptap/starter-kit": "^2.0.0-beta.209",

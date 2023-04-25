@@ -55,7 +55,7 @@ const Navbar = () => {
         }
         `}
       </style>
-      <div style={{ padding: `${padding}` }} className='max-w-[1240px] m-auto flex justify-between items-center text-white'>
+      <div style={{ padding: `${padding}` }} className='max-w-[1640px] m-auto flex justify-between items-center text-white'>
         <Link rel="preload" href='/'>
           <Image quality="90" loading="lazy" className='cursor-pointer' src='/logo.png' width="54" height="54" alt="navbarLogo" />
         </Link>

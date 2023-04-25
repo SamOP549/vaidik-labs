@@ -22,17 +22,17 @@ const Services = () => {
     {
       title: "Optimization",
       picture: "./Services/l4.jpg",
-      description: "Performance Pptimization refers to the process of changing a software system so that it operates more quickly and efficiently."
+      description: "Performance Optimization refers to the process of changing a software system so that it operates more quickly and efficiently."
     },
     {
-      title: "Fintech Service",
+      title: "Fintech Services",
       picture: "./Services/l5.jpg",
       description: "Fintech is the term for the process through which financial services providers incorporate technology to enhance the usability and delivery of their products to customers."
     },
     {
       title: "Custom Banking Software Service",
       picture: "./Services/l6.jpg",
-      description: "For startups, small-to-midsize (SMB), and enterprise-size enterprises, we provide top-notch custom software development services."
+      description: "We cater the custom needs of the banking industry incuding NBFC's and Schedule Partner."
     },
     {
       title: "CBS Upgrade",

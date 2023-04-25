@@ -105,7 +105,7 @@ const Careers = () => {
     <div>
       <Hero screen={2} title="Careers" bg="/Covers/careers.jpg" />
       <div className='py-10 px-6'>
-        <h1 className='text-2xl font-semibold text-gray-800 capitalize md:text-3xl lg:text-4xl text-center'>Join With Us</h1>
+        <h1 className='text-2xl font-semibold text-gray-800 capitalize md:text-3xl lg:text-4xl text-center'>Opportunities With Us</h1>
         <section className="mb-8 -mt-4 overflow-x-hidden">
           {heros}
         </section>

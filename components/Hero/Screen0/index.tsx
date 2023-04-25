@@ -17,7 +17,7 @@ const useStyles = createStyles((_theme, _params, getRef) => ({
     },
 
     root: {
-        height: "100vh",
+        height: "90vh",
         '&:hover': {
             [`& .${getRef('controls')}`]: {
                 opacity: 1,
@@ -77,9 +77,9 @@ function Demo() {
             {slides.map((slide, index) => (
                 <Carousel.Slide key={index}>
                     <div
-                        className="p-12 text-center relative overflow-hidden" style={{ height: "100vh" }}>
+                        className="p-12 text-center relative overflow-hidden" style={{ height: "90vh" }}>
                         <Image quality="90" loading="lazy" src={slide.image} layout="fill" objectFit="cover" alt={slide.title} />
-                        <div style={{ backgroundColor: "rgba(0, 0, 0, 0.3)" }}
+                        <div style={{ backgroundColor: "rgba(0, 0, 0, 0.4)" }}
                             className="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed">
                             <div className="flex justify-center items-center h-full">
                                 <div className="text-white md:px-36 px-12">
