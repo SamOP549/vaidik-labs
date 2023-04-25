@@ -78,7 +78,7 @@ function Demo() {
                 <Carousel.Slide key={index}>
                     <div
                         className="p-12 text-center relative overflow-hidden" style={{ height: "90vh" }}>
-                        <Image quality="90" loading="lazy" src={slide.image} layout="fill" objectFit="cover" alt={slide.title} />
+                        <Image quality="90" priority src={slide.image} layout="fill" objectFit="cover" alt={slide.title} />
                         <div style={{ backgroundColor: "rgba(0, 0, 0, 0.4)" }}
                             className="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed">
                             <div className="flex justify-center items-center h-full">
