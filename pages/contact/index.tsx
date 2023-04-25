@@ -147,7 +147,6 @@ export default function ContactUs() {
           <div className='col-span-1'>
             <label htmlFor="date" className="text-sm">Pick a date:</label>
             <DatePicker
-              showIcon
               selected={startDate}
               onChange={(date: any) => setStartDate(date)}
             />
