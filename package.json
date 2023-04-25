@@ -53,6 +53,7 @@
   },
   "devDependencies": {
     "@types/aos": "^3.0.4",
+    "@types/react-datepicker": "^4.10.0",
     "autoprefixer": "^10.4.13",
     "postcss": "^8.4.21",
     "postcss-import": "^15.1.0",
