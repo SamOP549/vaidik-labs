@@ -1,6 +1,7 @@
 import React from 'react'
 import Hero from '@/components/Hero'
 import Link from 'next/link'
+import Head from 'next/head'
 
 const Services = () => {
   const data = [
@@ -87,6 +88,9 @@ const Services = () => {
   })
   return (
     <div>
+      <Head>
+        <title>Services - Vaidik Labs</title>
+      </Head>
       <Hero screen={2} title="Our Services" bg="/Covers/services.jpg" />
 
       <section className="my-16 overflow-x-hidden">

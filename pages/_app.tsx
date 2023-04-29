@@ -18,8 +18,6 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
     <Head>
-      <title>Vaidik Labs</title>
-      <meta name="description" content="Vaidik Labs is a startup that aims to provide the best quality products and services to its customers." />
       <link rel="icon" href="/logo.png" />
     </Head>
     <MantineProvider withGlobalStyles withNormalizeCSS>

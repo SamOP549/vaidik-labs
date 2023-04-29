@@ -1,6 +1,7 @@
 import React from 'react'
 import Hero from '@/components/Hero'
 import Link from 'next/link'
+import Head from 'next/head'
 
 const Careers = () => {
   const data = [
@@ -103,6 +104,9 @@ const Careers = () => {
   })
   return (
     <div>
+      <Head>
+        <title>Careers - Vaidik Labs</title>
+      </Head>
       <Hero screen={2} title="Careers" bg="/Covers/careers.jpg" />
       <div className='py-10 px-6'>
         <h1 className='text-2xl font-semibold text-gray-800 capitalize md:text-3xl lg:text-4xl text-center'>Opportunities With Us</h1>

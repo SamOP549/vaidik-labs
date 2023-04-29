@@ -1,10 +1,14 @@
 import React from 'react'
 import Hero from '@/components/Hero'
 import Link from 'next/link'
+import Head from 'next/head'
 
 const About = () => {
   return (
     <div>
+      <Head>
+        <title>About Us - Vaidik Labs</title>
+      </Head>
       <Hero screen={2} title="About Us" bg="/Covers/contact.jpg" />
       <div className="py-10 md:px-20 px-6 mx-auto">
 

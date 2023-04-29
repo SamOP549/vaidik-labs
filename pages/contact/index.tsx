@@ -4,6 +4,7 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Head from 'next/head';
 
 export default function ContactUs() {
 
@@ -107,6 +108,9 @@ export default function ContactUs() {
 
   return (
     <>
+      <Head>
+        <title>Contact Us - Vaidik Labs</title>
+      </Head>
       <Hero screen={2} title="Contact Us" bg="/Covers/contact.jpg" />
       <ToastContainer
         position="bottom-center"
